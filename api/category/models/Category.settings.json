@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "price": {
+      "default": "",
+      "type": "decimal"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "isPublished": {
+      "default": false,
+      "type": "boolean"
+    },
+    "mobiles": {
+      "collection": "mobile",
+      "via": "category"
+    }
+  }
+}

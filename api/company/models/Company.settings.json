@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "company",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "catchPhrase": {
+      "default": "",
+      "type": "string"
+    },
+    "bs": {
+      "default": "",
+      "type": "string"
+    },
+    "user": {
+      "model": "user",
+      "via": "company",
+      "plugin": "users-permissions"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mobiles",
+      "handler": "Mobile.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobiles/count",
+      "handler": "Mobile.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobiles/:_id",
+      "handler": "Mobile.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mobiles",
+      "handler": "Mobile.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mobiles/:_id",
+      "handler": "Mobile.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mobiles/:_id",
+      "handler": "Mobile.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
